@@ -1,0 +1,5 @@
+{"_id":{"$oid":"5ac47b173dcd1049b0a8453c"},"des":"待处理请求","path":"application"}
+{"_id":{"$oid":"5ac47b173dcd1049b0a8453d"},"des":"地市引入统计","path":"citystatics"}
+{"_id":{"$oid":"5ac47b173dcd1049b0a8453e"},"des":"资源引入监测","path":"resourcestatics"}
+{"_id":{"$oid":"5ac47b173dcd1049b0a8453f"},"des":"配置管理","path":"config"}
+{"_id":{"$oid":"5ac47b173dcd1049b0a84540"},"des":"用户管理","path":"user"}

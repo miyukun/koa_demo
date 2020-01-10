@@ -1,0 +1,17 @@
+{"_id":{"$oid":"5af8f8e4facd8c408beff2ca"},"key":"cdnusername","__v":0,"val":"doupeng"}
+{"_id":{"$oid":"5af8f8e4facd8c408beff2cc"},"key":"cdnpwd","__v":0,"val":"Doupeng1234568"}
+{"_id":{"$oid":"5af8f8e4facd8c408beff2ce"},"key":"cdnurl","__v":0,"val":"120.198.245.97"}
+{"_id":{"$oid":"5af8f8e4facd8c408beff2d0"},"key":"bcusername","__v":0,"val":"admin"}
+{"_id":{"$oid":"5af8f8e4facd8c408beff2d2"},"key":"bcpwd","__v":0,"val":"a"}
+{"_id":{"$oid":"5af8f8e4facd8c408beff2d4"},"key":"bcurl","__v":0.0,"val":"127.0.0.1"}
+{"_id":{"$oid":"5af9024dfacd8c408bf014ef"},"key":"cdnport","__v":0,"val":"4300"}
+{"_id":{"$oid":"5af9024dfacd8c408bf014f4"},"key":"bcport","__v":0.0,"val":"3012"}
+{"_id":{"$oid":"5b1a332d28c2bdaaebb81f76"},"key":"esbusername","__v":0,"val":"OTTSQM"}
+{"_id":{"$oid":"5b1a332d28c2bdaaebb81f78"},"key":"esbpwd","__v":0,"val":"OTTSQM12"}
+{"_id":{"$oid":"5b1a332d28c2bdaaebb81f7a"},"key":"esburl","__v":0,"val":"120.198.245.69"}
+{"_id":{"$oid":"5b1a332d28c2bdaaebb81f7c"},"key":"esbport","__v":0,"val":"5901"}
+{"_id":{"$oid":"5b1a332d28c2bdaaebb81f7e"},"key":"esbdataip","__v":0,"val":"188.4.20.51"}
+{"_id":{"$oid":"5b1a397b28c2bdaaebb8397a"},"key":"smtpip","__v":0,"val":"smtp.163.com"}
+{"_id":{"$oid":"5b1a397b28c2bdaaebb8397c"},"key":"smtpport","__v":0,"val":"465"}
+{"_id":{"$oid":"5b1a397b28c2bdaaebb8397e"},"key":"emailuser","__v":0,"val":"vixtelgdcdn@163.com"}
+{"_id":{"$oid":"5b1a397b28c2bdaaebb83980"},"key":"emailpwd","__v":0,"val":"vixtel20180502"}

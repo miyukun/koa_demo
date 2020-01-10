@@ -1,0 +1,7 @@
+{"_id":{"$oid":"5abddfa0c19400058aa2e504"},"users":[],"des":"管理","__v":0,"modules":[{"$oid":"5ac47b173dcd1049b0a8453c"},{"$oid":"5ac47b173dcd1049b0a8453d"},{"$oid":"5ac47b173dcd1049b0a8453e"},{"$oid":"5ac47b173dcd1049b0a8453f"},{"$oid":"5ac47b173dcd1049b0a84540"}],"code":"admin"}
+{"_id":{"$oid":"5abddfa6c19400058aa2e506"},"users":[],"des":"省公司","__v":0,"modules":[{"$oid":"5ac47b173dcd1049b0a8453c"},{"$oid":"5ac47b173dcd1049b0a8453d"},{"$oid":"5ac47b173dcd1049b0a8453e"},{"$oid":"5ac47b173dcd1049b0a8453f"},{"$oid":"5ac47b173dcd1049b0a84540"}],"code":"sgs"}
+{"_id":{"$oid":"5abddfabc19400058aa2e508"},"users":[],"des":"地市","__v":0,"modules":[{"$oid":"5ac47b173dcd1049b0a8453c"},{"$oid":"5ac47b173dcd1049b0a8453d"},{"$oid":"5ac47b173dcd1049b0a8453e"},{"$oid":"5ac47b173dcd1049b0a8453f"},{"$oid":"5ac47b173dcd1049b0a84540"}],"code":"ds"}
+{"_id":{"$oid":"5abddfb1c19400058aa2e50a"},"users":[],"des":"CDN厂家","__v":0,"modules":[{"$oid":"5ac47b173dcd1049b0a8453c"},{"$oid":"5ac47b173dcd1049b0a8453d"},{"$oid":"5ac47b173dcd1049b0a8453e"},{"$oid":"5ac47b173dcd1049b0a8453f"},{"$oid":"5ac47b173dcd1049b0a84540"}],"code":"cdn"}
+{"_id":{"$oid":"5abddfb8c19400058aa2e50c"},"users":[],"des":"拨测厂家","__v":0,"modules":[{"$oid":"5ac47b173dcd1049b0a8453c"},{"$oid":"5ac47b173dcd1049b0a8453d"},{"$oid":"5ac47b173dcd1049b0a8453e"},{"$oid":"5ac47b173dcd1049b0a8453f"},{"$oid":"5ac47b173dcd1049b0a84540"}],"code":"bc"}
+{"_id":{"$oid":"5abe04531a8683555a7638cf"},"users":[],"des":"测试组","__v":0,"code":"cs"}
+{"_id":{"$oid":"5ac1ec89ba6689095c5adf25"},"users":[],"des":"bbbb","__v":0}

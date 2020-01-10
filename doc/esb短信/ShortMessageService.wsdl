@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:info="http://gdmcc.com/oss/esb/comm/message" xmlns:sm="http://gdmcc.com/oss/esb/comm/shortM" targetNamespace="http://gdmcc.com/oss/esb/comm/shortM">
+	<types>
+		<xsd:schema targetNamespace="http://gdmcc.com/oss/esb/comm/shortM">
+			<xsd:import namespace="http://gdmcc.com/oss/esb/comm/message" schemaLocation="../Schemas/ComponentInfo.xsd"/>
+		</xsd:schema>
+	</types>
+	<message name="ShortMessageRequest">
+		<part name="ShortMRq" element="info:MsgWithDataRq"/>
+	</message>
+	<message name="ShortMessageResponse">
+		<part name="ShortMRs" element="info:MsgWithDataRs"/>
+	</message>
+	<portType name="ShortMessagePortType">
+		<operation name="process">
+			<input message="sm:ShortMessageRequest"/>
+			<output message="sm:ShortMessageResponse"/>
+		</operation>
+	</portType>
+	<binding name="ShortMessageServiceSoapBinding" type="sm:ShortMessagePortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="process">
+			<soap:operation soapAction="http://gdmcc.com/oss/esb/comm/shortM" style="document"/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="ShortMessageService">
+		<port name="ShortMessagePort" binding="sm:ShortMessageServiceSoapBinding">
+			<soap:address location="http://10.201.30.5:8011/OSSCOM/ShortMessageService"/>
+		</port>
+	</service>
+</definitions>

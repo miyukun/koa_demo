@@ -1,0 +1,11 @@
+mongoimport -d gdcdn -c province --file  province.json --type json;
+
+mongoimport -d gdcdn -c user --file  user.json --type json;
+
+
+
+mongoimport -d gdcdn -c city --file  city.json --type json;
+
+mongoimport -d gdcdn -c modules --file  modules.json --type json;
+
+mongoimport -d gdcdn -c ugroup --file  ugroup.json --type json; 

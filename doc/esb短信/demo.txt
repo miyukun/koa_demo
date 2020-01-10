@@ -1,0 +1,48 @@
+Soap请求消息
+-------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+
+<soap:Body xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MsgWithDataRq xmlns="http://gdmcc.com/oss/esb/comm/message">
+    <MsgHeader xmlns="http://gdmcc.com/oss/esb/comm">
+      <ServiceCode/>
+      <DataType>UNMP.SM.Sender</DataType>
+      <SourceSysID>HZNS</SourceSysID>
+      <IpAddress>10.201.41.254</IpAddress>
+      <UserName>HZNS</UserName>
+      <EventID>d425fcd2-94fb-476c-aba2-253fec326384</EventID>
+      <EventTime>2015-02-04T17:27:10.746+08:00</EventTime>
+      <ReserveData/>
+    </MsgHeader>
+    <MsgDataRq xmlns="http://gdmcc.com/oss/esb/comm">
+      <TargetList>13923630312</TargetList>
+      <Subject>邮件标题</Subject>
+      <Content>这是测试shortmessage内容</Content>
+      <Attachments/>
+      <ReserveData>
+        <Parameter name="ServiceName" value="00"/>
+      </ReserveData>
+    </MsgDataRq>
+  </MsgWithDataRq>
+</soap:Body>
+
+-------------------------------------------------------------
+Soap响应消息
+-------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MsgWithDataRs xmlns="http://gdmcc.com/oss/esb/comm/message" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MsgBaseResult xmlns="http://gdmcc.com/oss/esb/comm">
+    <EventID>d425fcd2-94fb-476c-aba2-253fec326384</EventID>
+    <StatusCode>S000001</StatusCode>
+    <StatusType>1</StatusType>
+    <StatusDesc>发送成功</StatusDesc>
+  </MsgBaseResult>
+  <MsgDataRs xmlns="http://gdmcc.com/oss/esb/comm">
+    <DataType>UNMP.SM.Sender</DataType>
+    <DataSet>0F310A6B06124FA49F58FCB5B430A418</DataSet>
+  </MsgDataRs>
+</MsgWithDataRs>
+
+-------------------------------------------------------------
+

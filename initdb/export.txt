@@ -1,0 +1,6 @@
+mongoexport -d gdcdn -c ugroup -o ugroup.json;
+mongoexport -d gdcdn -c user -o user.json;
+mongoexport -d gdcdn -c city -o city.json;
+mongoexport -d gdcdn -c modules -o modules.json;
+mongoexport -d gdcdn -c province -o province.json;
+mongoexport -d gdcdn -c config -o config.json;

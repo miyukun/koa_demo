@@ -1,0 +1,36 @@
+html
+head
+script(src="/javascripts/jquery.min.js")
+script(src="/javascripts/underscore-min.js")
+script(src="/javascripts/modules/listtable.js")
+body
+  form(action="/modules/add" method="post")
+    | id : 
+    input#id(name='id' type='text' value='' ) 
+    br
+    | des : 
+    input#des(name='des' type='text' value='' ) 
+    br
+    | path : 
+    input#path(name='path' type='text' value='' ) 
+    br 
+    input(type='button' id="add" value='submit')
+
+  table#tab(border='1')
+    tr
+        td _id
+        td des
+        td path 
+        td oper 
+    each d in data
+      tr  
+        td=d._id
+        td=d.des
+         td=d.path 
+        td 
+          button(name='edit') edit 
+          button(name='delete') delete 
+          //- input#edit(type='button' value='edit' )
+          //- input#delete(type='button' value="delete" ) 
+              
+

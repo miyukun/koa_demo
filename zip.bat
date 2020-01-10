@@ -1,0 +1,1 @@
+"C:\Program Files\7-Zip\7z" a gdcdn.zip bin controllers initdb models public routes uploadfile utils views app.js config.js package.json web/build/production/gdcdn

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Body>
+<MsgWithDataRq xmlns="http://gdmcc.com/oss/esb/comm/message">
+<MsgHeader xmlns="http://gdmcc.com/oss/esb/comm">
+<ServiceCode/>
+<DataType>UNMP.SM.Sender</DataType>
+<SourceSysID>OTTSQM</SourceSysID>
+<IpAddress>188.4.20.51</IpAddress>
+<UserName>OTTSQM</UserName>
+<EventID/>
+<EventTime/>
+<ReserveData>
+<Parameter name="allowalert" value="0"/>
+</ReserveData>
+</MsgHeader>
+<MsgDataRq xmlns="http://gdmcc.com/oss/esb/comm">
+<TargetList>13826461254</TargetList>
+<Subject/>
+<Content>cdn≤‚ ‘∂Ã–≈</Content>
+<Attachments/>
+<ReserveData/>
+</MsgDataRq>
+</MsgWithDataRq>
+</soap:Body>
+</soap:Envelope>
+
+
+
+requestµƒheaders…Ë÷√"Content-Type":"text/xml;charset=UTF-8","authorization"£∫"Basic T1RUU1FNOk9UVFNRTTEy"
+std::string strAuthorization = "Basic " + Utils::String::Base64Encode(strEsbUsername + ":" + strEsbPassword);

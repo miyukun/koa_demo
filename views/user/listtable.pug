@@ -1,0 +1,68 @@
+html
+head
+script(src="/javascripts/jquery.min.js")
+script(src="/javascripts/underscore-min.js")
+script(src="/javascripts/user/listtable.js")
+body
+  form(action="/users/add" method="post")
+    | id : 
+    input#id(name='id' type='text' value='' ) 
+    br
+    | username : 
+    input#username(name='username' type='text' value='gdadmin' ) 
+    br
+    | fullname : 
+    input#fullname(name='fullname' type='text' value='gdadmin' ) 
+    br
+    | group : 
+    input#group(name='group' type='text' value='0' ) 
+    br
+    | phone : 
+    input#phone(name='phone' type='text' value='13526541452' ) 
+    br
+    | email : 
+    input#email(name='email' type='text' value='xxx@qq.com' ) 
+    br
+    | city : 
+    div#citydiv
+    br 
+    | modules : 
+    div#modulesdiv
+    br
+    input(type='button' id="add" value='submit')
+
+  table#tab(border='1')
+    tr
+      td _id
+      td username
+      td fullname
+      td group
+      td phone
+      td email
+      td city
+      td modules
+      td oper
+    each d in data
+      tr  
+        td=d._id
+        td=d.username
+        td=d.fullname
+        td=d.group
+        td=d.phone
+        td=d.email 
+        -var cc = '';
+        each c in d.city  
+          -cc=cc + c.des+','
+        td=  cc 
+
+        -var mm = '';
+        each m in d.modules  
+          -mm=mm + m.des+','
+        td=  mm  
+        td 
+          button(name='edit') edit 
+          button(name='delete') delete 
+          //- input#edit(type='button' value='edit' )
+          //- input#delete(type='button' value="delete" ) 
+
+

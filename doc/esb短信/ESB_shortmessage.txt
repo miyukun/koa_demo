@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <auth:authentication xmlns:auth="http://gdmcc.com/oss/esb/comm/message">
+      <auth:userID>VIXTELA</auth:userID>
+      <auth:password>VIXTELA1</auth:password>
+    </auth:authentication>
+  </soap:Header>
+  <soap:Body>
+    <Message xmlns="http://gdmcc.com/oss/esb/comm/message">
+      <MsgHeader xmlns="http://gdmcc.com/oss/esb/comm">
+        <ServiceCode />
+        <DataType>UNMP.SM.Sender</DataType>
+        <SourceSysID>VIXTELA</SourceSysID>
+        <IpAddress>10.201.41.100</IpAddress>
+        <UserName>VIXTELA</UserName>
+        <EventID />
+        <EventTime />
+        <ReserveData />
+      </MsgHeader>
+      <MsgDataRq xmlns="http://gdmcc.com/oss/esb/comm">
+        <TargetList>13800001111,13922223333</TargetList>
+        <Subject></Subject>
+        <Content>esb alert test</Content>
+        <Attachments />
+        <ReserveData />
+      </MsgDataRq>
+    </Message>
+  </soap:Body>
+</soap:Envelope>

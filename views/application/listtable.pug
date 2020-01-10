@@ -1,0 +1,186 @@
+html
+head
+  script(src="/javascripts/jquery.min.js")
+  script(src="/javascripts/jquery-ui.min.js")
+  script(src="/javascripts/jquery.serializejson.js")
+  script(src="/javascripts/moment-with-locales.min.js")
+  script(src="/javascripts/underscore-min.js")
+  script(src="/javascripts/application/listtable.js")
+body
+  form(action="/application/add" id="applicationform" enctype="multipart/form-data" method="post")
+    | id : 
+    input#id(name='_id' type='text' value='' ) 
+    hr
+    div(style="width:100%;display:flex")
+      div(style="flex:1") 
+        | 客户基本信息
+        br
+        | 客户名称 : 
+        input#customerkhmc(name='customer[khmc]' type='text' value='' ) 
+        br
+        | 网站域名 : 
+        input#customerwzym(name='customer[wzym]' type='text' value='' ) 
+        br
+        | 网站ICP备案号 : 
+        input#customerwzicpbah(name='customer[wzicpbah]' type='text' value='' ) 
+      div(style="flex:1")
+        | 基本信息 中国移动
+        br
+        | 销售经理 : 
+        input#customerxsjl(name='customer[xsjl]' type='text' value='' ) 
+        br
+        | 电话 : 
+        input#customerxsjldh(name='customer[xsjldh]' type='text' value='' ) 
+        br
+        | 邮箱 : 
+        input#customerxsjlyx(name='customer[xsjlyx]' type='text' value='' ) 
+        br 
+        | 售前工程师 : 
+        input#customersqgcs(name='customer[sqgcs]' type='text' value='' ) 
+        br
+        | 电话 : 
+        input#customersqgcsdh(name='customer[sqgcsdh]' type='text' value='' ) 
+        br
+        | 邮箱 : 
+        input#customersqgcsyx(name='customer[sqgcsyx]' type='text' value='' ) 
+        br 
+        | 客户
+        br
+        | 主要负责人 : 
+        input#customerzyfzr(name='customer[zyfzr]' type='text' value='' ) 
+        br
+        | 电话 : 
+        input#customerzyfzrdh(name='customer[zyfzrdh]' type='text' value='' ) 
+        br
+        | 邮箱 : 
+        input#customerzyfzryx(name='customer[zyfzryx]' type='text' value='' ) 
+      div(style="flex:1")
+        | 备注 : 
+        input#customerbz(name='customer[bz]' type='text' value='' )  
+    hr
+    div(style="width:100%;display:flex")
+      div#jzymdiv(style="flex:1")   
+          input(type='button' id="jzymadd" value='添加' )  
+          div#jzymtemplate(name="jzym" style="display:none")
+            | 加载域名 : 
+            input(name='domain[jzym][idx][ym]' type='text' value='' )  
+            br
+            | 服务端口 : 
+            input(name='domain[jzym][idx][dk]' type='text' value='' )  
+            br
+            | 回源ip : 
+            input(name='domain[jzym][idx][hyip]' type='text' value='' )  
+            br
+            | 回源专用域名 : 
+            input(name='domain[jzym][idx][hyzyym]' type='text' value='' ) 
+            br 
+            | 移动用户带宽峰值 : 
+            input(name='domain[jzym][idx][ydyhdkfz]' type='text' value='' ) 
+            br 
+            | 存储容量 : 
+            input(name='domain[jzym][idx][ccrl]' type='text' value='' ) 
+            br 
+            | 是否有动态内容及占比 : 
+            input(name='domain[jzym][idx][sfydtnrjzb]' type='text' value='' ) 
+            br 
+            | 业务类型 : 
+            input(name='domain[jzym][idx][ywlx]' type='text' value='' )   
+            input(type='button' name="jzymdel" value='删除' )
+            hr(style="border:1px dashed #987cb9")  
+        
+      div(style="flex:1") 
+        div
+          | 加速域名 : 
+          input#domainjsym(name='domain[jsym]' type='text' value='' ) 
+          hr(style="border:1px dashed #987cb9" )  
+        div
+          | 遵循源站header : 
+          input#domainhcclqrzxyzheader(name='domain[hcclqr][zxyzheader]' type='checkbox'   )   
+          br
+          | header设置 : 
+          input#domainhcclqrheadersz(name='domain[hcclqr][headersz]' type='checkbox' )  
+          br
+          | cdn设置缓存策略 : 
+          input#domainhcclqrcdnszhccl(name='domain[hcclqr][cdnszhccl]' type='checkbox'  )   
+          br
+          | 缓存资源类型 : 
+          input#domainhcclqrhczylx(name='domain[hcclqr][hczylx]' type='text' value='' )  
+          br
+          | 缓存时间 : 
+          input#domainhcclqrhcsj(name='domain[hcclqr][hcsj]' type='text' value='' )  
+          br
+          | 特殊要求 : 
+          input#domainhcclqrtsyq(name='domain[hcclqr][tsyq]' type='checkbox' )  
+          hr(style="border:1px dashed #987cb9" ) 
+        div
+          | 是否有动态URL : 
+          input#domainurlfdlsfydturl(name='domain[urlfdl][sfydturl]' type='checkbox'  )   
+          br
+          | 是否有防盗链 : 
+          input#domainurlfdlfsyfdl(name='domain[urlfdl][fsyfdl]' type='checkbox' )  
+          br
+          | 防盗链定制开发 : 
+          input#domainurlfdlfdldzkf(name='domain[urlfdl][fdldzkf]' type='checkbox' )  
+          hr(style="border:1px dashed #987cb9" )
+        div
+          | 是否需要日志推送服务 : 
+          input#domainrzfwsfxyrztsfw(name='domain[rzfw][sfxyrztsfw]' type='checkbox'  )   
+          br 
+          | 日志格式 : 
+          input#domainrzfwrzgs(name='domain[rzfw][rzgs]' type='text' value='' ) 
+          hr(style="border:1px dashed #987cb9" )
+        | 测试URL链接 : 
+        input#domaincsurllj(name='domain[csurllj]' type='text' value='' ) 
+        hr(style="border:1px dashed #987cb9" )  
+         
+        | 源站是否支持CNAME调试方式 :  
+        input#domainyzsfzccnamedd(name='domain[yzsfzccnamedd]' type='checkbox'  )  
+        hr(style="border:1px dashed #987cb9" )  
+        | 安全备案资料 :  
+        input(type="file" name="aqbazl" id="fileupload") 
+        input(type="button" name="upload" id="uploadbtn" value="upload") 
+        br
+        input#aqbazlname(name='aqbazlname' type='text' value='' ) 
+        input#aqbazlpath(name='aqbazlpath' type='text' value='' ) 
+        hr(style="border:1px dashed #987cb9" )  
+    input#applicationadd(type='button' value='save')
+ 
+  table#tab(border='1')
+    tr
+      td _id
+      td 申请时间
+      td 地市 
+      td icp 
+      td 加速域名 
+      td 处理状态 
+      td 最近处理时间 
+      td 最近处理人 
+      td 下一步处理人 
+      td oper 
+    each d in data
+      tr  
+        td=d._id
+        td= d.createtime  
+        -var city = '';
+        each c in d.creator.city
+          -city = city + c.des
+        td= city
+        td=d.customer.wzicpbah
+        td=d.domain.jsym
+        td=d.status
+        td=d.updatetime
+        td=d.creator.username
+        td
+          div(name='nextoperdiv' style="background-color:#bbb;width:100%;height:25px;display:block;")
+        td
+          button(name='edit') edit 
+          button(name='delete') delete  
+          button(name='submit') submit 
+ 
+    |下步操作人员 
+    select#group 
+    div#userdiv 
+    
+               
+
+

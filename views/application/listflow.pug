@@ -1,0 +1,41 @@
+html
+head
+  script(src="/javascripts/jquery.min.js")
+  script(src="/javascripts/jquery.serializejson.js")
+  script(src="/javascripts/moment-with-locales.min.js")
+  script(src="/javascripts/underscore-min.js")
+  script(src="/javascripts/application/listflow.js")
+body 
+  input#logout(type='button' value='logout')
+  table#datatable(border='1')
+    tr
+      td _id
+      td 申请时间
+      td 地市 
+      td icp 
+      td 加速域名 
+      td 处理状态 
+      td 最近处理时间 
+      td 最近处理人 
+      td 下一步处理人 
+      td oper 
+    //- each d in data
+    //-   tr  
+    //-     td=d._id
+    //-     td= d.createtime  
+    //-     -var city = '';
+    //-     each c in d.creator.city
+    //-       -city = city + c.des
+    //-     td= city
+    //-     td=d.customer.wzicpbah
+    //-     td=d.domain.jsym
+    //-     td=d.status
+    //-     td=d.updatetime
+    //-     td
+    //-     td
+    //-     td
+    //-       button(name='edit') edit 
+    //-       button(name='delete') delete  
+    //-       button(name='submit') submit  
+
+

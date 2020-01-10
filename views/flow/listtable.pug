@@ -1,0 +1,25 @@
+html
+head
+  script(src="/javascripts/jquery.min.js")
+  script(src="/javascripts/jquery.serializejson.js")
+  script(src="/javascripts/moment-with-locales.min.js")
+  script(src="/javascripts/underscore-min.js")
+  script(src="/javascripts/flow/listtable.js")
+body 
+  table#tab(border='1')
+    tr
+      td _id
+      td status
+      td operator 
+      td updatetime 
+    each d in data
+      tr  
+        td=d._id
+        td= d.status   
+        td= operator
+        td=d.updatetime 
+        td
+          button(name='edit') edit 
+          button(name='delete') delete  
+
+
